@@ -56,8 +56,10 @@ Os perfis **Cliente** e **Administrador** atendem ao requisito mínimo de dois c
 
 ### Passos
 
+Repositório: https://github.com/vitor-dandrea/multiplagier
+
 ```bash
-git clone <url-do-repositorio> multiplagier
+git clone https://github.com/vitor-dandrea/multiplagier.git
 cd multiplagier
 composer install
 copy .env.example .env
