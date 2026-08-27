@@ -1,6 +1,6 @@
 # Multiplagier
 
-E-commerce acadêmico inspirado na [Multilaser](https://www.multilaser.com.br/), desenvolvido para a disciplina **ISG022 — Segurança no Desenvolvimento de Aplicações** (FATEC Mauá, 2026/2).
+E-commerce acadêmico desenvolvido para a disciplina **ISG022 — Segurança no Desenvolvimento de Aplicações** (FATEC Mauá, 2026/2).
 
 O produto nasce simples e evolui com **Security by Design**: a cada Sprint da disciplina, novos requisitos, ameaças, controles e evidências entram no backlog e no repositório.
 
@@ -35,7 +35,6 @@ Os perfis **Cliente** e **Administrador** atendem ao requisito mínimo de dois c
 | Product Manager | Marco |
 | Team Member | Mauro |
 
-> **Nota:** o documento oficial da disciplina sugere equipes de 5 integrantes. Este grupo inicia com 3 pessoas; alinhar com o professor se necessário.
 
 ## Stack
 
