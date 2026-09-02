@@ -6,7 +6,13 @@ O produto nasce simples e evolui com **Security by Design**: a cada Sprint da di
 
 ## Status
 
-**Sprint 0 — Fundação**
+**Oficina de Product Backlog** — backlog inicial versionado; implementação de features nas próximas Sprints.
+
+## Product Goal
+
+Permitir que consumidores comprem eletrônicos e acessórios online no Multiplagier, e que administradores gerenciem o catálogo e os pedidos, com autenticação, autorização por perfil/recurso e rastreabilidade básica de ações sensíveis.
+
+Documento completo: [docs/backlog/product-backlog.md](docs/backlog/product-backlog.md) · Issues: https://github.com/vitor-dandrea/multiplagier/issues
 
 ## Visão do produto
 
@@ -106,11 +112,15 @@ Acesse: [http://multiplagier.test](http://multiplagier.test)
 multiplagier/
 ├── README.md
 ├── docs/
+│   ├── backlog/
+│   │   └── product-backlog.md
 │   ├── architecture/
 │   │   └── architecture-v1.md
-│   └── security/
-│       ├── security-baseline.md
-│       └── initial-risks.md
+│   ├── security/
+│   │   ├── security-baseline.md
+│   │   └── initial-risks.md
+│   └── references/
+│       └── isg022/          # PDFs da disciplina
 ├── app/
 ├── routes/
 └── ...
@@ -118,7 +128,7 @@ multiplagier/
 
 ## Acordo de trabalho do grupo
 
-- Product Backlog em **GitHub Issues** (e Project, se adotado).
+- Product Backlog em **GitHub Issues** e em [docs/backlog/product-backlog.md](docs/backlog/product-backlog.md).
 - Desenvolvimento em **branches de curta duração** a partir de `main` (ex.: `feat/...`, `docs/...`, `fix/...`).
 - Evitar commits diretos permanentes em `main` para mudanças relevantes.
 - Integração via **Pull Request**; pelo menos **um outro integrante** revisa quando possível.
@@ -126,18 +136,29 @@ multiplagier/
 - Não versionar segredos; revisar `.gitignore` antes do push.
 - Definition of Done alinhada à disciplina: código revisado, critérios de aceite, docs atualizadas e impacto de segurança avaliado quando aplicável.
 
-## Documentação de segurança (Sprint 0 / baseline)
+## Documentação
+
+### Produto e backlog
+
+- [Product Backlog](docs/backlog/product-backlog.md)
+
+### Segurança e arquitetura (Sprint 0 / baseline)
 
 - [Architecture v1](docs/architecture/architecture-v1.md)
 - [Security Baseline](docs/security/security-baseline.md)
 - [Initial Risks](docs/security/initial-risks.md)
 
+### Referências da disciplina (PDFs)
+
+- [docs/references/isg022/](docs/references/isg022/) — Projeto Integrador, Security Baseline e Oficina de Product Backlog
+
 ## Roadmap resumido (ISG022)
 
 | Sprint | Foco |
 |--------|------|
-| 0 | Fundação (este repositório) |
-| 1 | Fundamentos e riscos |
+| 0 | Fundação (repositório, baseline) |
+| — | Oficina Product Backlog (este marco) |
+| 1 | Fundamentos e riscos / início de implementação |
 | 2 | Arquitetura segura / threat model |
 | 3 | Identidade e acesso |
 | 4 | Mitigações OWASP |
@@ -147,4 +168,4 @@ multiplagier/
 
 ## Licença
 
-Projeto acadêmico — uso educacional.
+Projeto acadêmico — uso educacional. Os PDFs em `docs/references/isg022/` são material didático da FATEC/ISG-022; ver atribuição naquela pasta.
